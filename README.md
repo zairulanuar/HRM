@@ -199,7 +199,7 @@ We evaluate the multilingual math capability using the MGSM dataset. MGSM origin
 
 
 #### Translation
-We use the test sets from Flores-200 for evaluation and report the zero-shot chrF++ scores for translations between every pair of languages. Each row in the table below presents the average results of translating from various source languages into the target languages. The last column displays the overall average results of translating from any language to any other language for each model.
+We use the test sets from Flores-200 for evaluation and report the zero-shot chrF scores for translations between every pair of languages. Each row in the table below presents the average results of translating from various source languages into the target languages. The last column displays the overall average results of translating from any language to any other language for each model.
 
 | model                                          |    en |    id |    jv |    km |    lo |    ms |    my |    ta |    th |    tl |    vi |    zh |   avg |
 |:-----------------------------------------------|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|
