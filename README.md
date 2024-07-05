@@ -179,7 +179,7 @@ We conduct our evaluation along two dimensions:
 #### Multilingual Instruction-following Capability - SeaBench
 SeaBench consists of multi-turn human instructions spanning various task types. It evaluates chat-based models on their ability to follow human instructions in both single and multi-turn settings and assesses their performance across different task types. The dataset and corresponding evaluation code will be released soon!
 
-| model           |   id<br>turn-1 |   id<br>turn-2 |   id<br>avg |   th<br>turn-1 |   th<br>turn-2 |   th<br>avg |   vi<br>turn-1 |   vi<br>turn-2 |   vi<br>avg |   avg |
+| model           |   id<br>turn1 |   id<br>turn2 |   id<br>avg |   th<br>turn1 |   th<br>turn2 |   th<br>avg |   vi<br>turn1 |   vi<br>turn2 |   vi<br>avg |   avg |
 |:----------------|------------:|------------:|---------:|------------:|------------:|---------:|------------:|------------:|---------:|------:|
 | Qwen2-7B-Instruct|         5.93 |         5.84 |     5.89 |         5.47 |         5.20 |     5.34 |         6.17 |         5.60 |     5.89 |  5.70 |
 | SeaLLM-7B-v2.5  |         6.27 |         4.96 |     5.62 |         5.79 |         3.82 |     4.81 |         6.02 |         4.02 |     5.02 |  5.15 |
