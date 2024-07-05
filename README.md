@@ -9,6 +9,9 @@ language:
 - vi
 - th
 - ms
+tags:
+- sea
+- multilingual
 ---
 
 # *SeaLLM3* - Large Language Models for Southeast Asia
@@ -17,17 +20,21 @@ language:
 <p align="center">
 <a href="https://damo-nlp-sg.github.io/SeaLLMs/" target="_blank" rel="noopener">Website</a>
 &nbsp;&nbsp;
-<a href="https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5" target="_blank" rel="noopener"> 🤗 Tech Memo</a>
+<a href="https://huggingface.co/SeaLLMs/SeaLLM3-7B-Chat" target="_blank" rel="noopener"> 🤗 Tech Memo</a>
 &nbsp;&nbsp;
-<a href="https://huggingface.co/spaces/SeaLLMs/SeaLLM-7B-v2.5" target="_blank" rel="noopener"> 🤗 DEMO</a>
+<a href="https://huggingface.co/spaces/SeaLLMs/SeaLLM-Chat" target="_blank" rel="noopener"> 🤗 DEMO</a>
 &nbsp;&nbsp;
 <a href="https://github.com/DAMO-NLP-SG/SeaLLMs" target="_blank" rel="noopener">Github</a>
 &nbsp;&nbsp;
 <a href="https://arxiv.org/pdf/2312.00738.pdf" target="_blank" rel="noopener">Technical Report</a>
 </p>
 
-We introduce **SeaLLM3**, the latest series of the SeaLLMs (Large Language Models for Southeast Asian languages) family. It achieves state-of-the-art performance among models with similar sizes, excelling across a diverse array of tasks such as world knowledge, mathematical reasoning, translation, and instruction following. In the meantime, it was specifically enhanced to be more trustworthy, exhibiting reduced hallucination and providing safe responses, particularly in queries posed in Southeast Asian languages.
+We introduce **SeaLLM3**, the latest series of the SeaLLMs (Large Language Models for Southeast Asian languages) family. It achieves state-of-the-art performance among models with similar sizes, excelling across a diverse array of tasks such as world knowledge, mathematical reasoning, translation, and instruction following. In the meantime, it was specifically enhanced to be more trustworthy, exhibiting reduced hallucination and providing safe responses, particularly in queries closed related to Southeast Asian culture.
 
+## 🔥 Highlights
+- State-of-the-art performance compared to open-source models of similar sizes, evaluated across various dimensions such as human exam questions, instruction-following, mathematics, and translation.
+- Significantly enhanced instruction-following capability, especially in multi-turn settings.
+- Ensures safety in usage with significantly reduced instances of hallucination and sensitivity to local contexts.
 
 ## Uses
 
@@ -149,7 +156,7 @@ By using our released weights, codes, and demos, you agree to and comply with th
 We conduct our evaluation along two dimensions:
 
 1. **Model Capability**: We assess the model's performance on human exam questions, its ability to follow instructions, its proficiency in mathematics, and its translation accuracy.
-2. **Model Trustworthiness**: We evaluate the model's safety and tendency to hallucinate, particularly in the context of Southeast Asia (SEA).
+2. **Model Trustworthiness**: We evaluate the model's safety and tendency to hallucinate, particularly in the context of Southeast Asia.
 
 ### Model Capability
 
@@ -172,9 +179,8 @@ We conduct our evaluation along two dimensions:
 #### Multilingual Instruction-following Capability - SeaBench
 SeaBench consists of multi-turn human instructions spanning various task types. It evaluates chat-based models on their ability to follow human instructions in both single and multi-turn settings and assesses their performance across different task types. The dataset and corresponding evaluation code will be released soon!
 
-| model           |   id turn-1 |   id turn-2 |   id avg |   th turn-1 |   th turn-2 |   th avg |   vi turn-1 |   vi turn-2 |   vi avg |   avg |
+| model           |   id<br>turn-1 |   id<br>turn-2 |   id<br>avg |   th<br>turn-1 |   th<br>turn-2 |   th<br>avg |   vi<br>turn-1 |   vi<br>turn-2 |   vi<br>avg |   avg |
 |:----------------|------------:|------------:|---------:|------------:|------------:|---------:|------------:|------------:|---------:|------:|
-| ChatGPT-0125    |         6.99 |         7.21 |     7.10 |         5.36 |         5.08 |     5.22 |         6.62 |         6.73 |     6.68 |  6.33 |
 | Qwen2-7B-Instruct|         5.93 |         5.84 |     5.89 |         5.47 |         5.20 |     5.34 |         6.17 |         5.60 |     5.89 |  5.70 |
 | SeaLLM-7B-v2.5  |         6.27 |         4.96 |     5.62 |         5.79 |         3.82 |     4.81 |         6.02 |         4.02 |     5.02 |  5.15 |
 | Sailor-14B-Chat |         5.26 |         5.53 |     5.40 |         4.62 |         4.36 |     4.49 |         5.31 |         4.74 |     5.03 |  4.97 |
