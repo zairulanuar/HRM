@@ -254,5 +254,14 @@ We would like to express our special thanks to our professional and native lingu
 
 If you find our project useful, we hope you would kindly star our repo and cite our work as follows: 
 ```
-@article{}
+@article{damonlpsg2023seallm,
+  author = {Xuan-Phi Nguyen*, Wenxuan Zhang*, Xin Li*, Mahani Aljunied*, Weiwen Xu, Hou Pong Chan,
+            Zhiqiang Hu, Chenhui Shen^, Yew Ken Chia^, Xingxuan Li, Jianyu Wang,
+            Qingyu Tan, Liying Cheng, Guanzheng Chen, Yue Deng, Sen Yang,
+            Chaoqun Liu, Hang Zhang, Lidong Bing},
+  title = {SeaLLMs - Large Language Models for Southeast Asia},
+  year = 2023,
+  Eprint = {arXiv:2312.00738},
+}
 ```
+Corresponding Author: l.bing@alibaba-inc.com
