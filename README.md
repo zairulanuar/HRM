@@ -71,7 +71,7 @@ model_inputs = tokenizer([text], return_tensors="pt").to(device)
 print(f"Formatted text:\n {text}")
 print(f"Model input:\n {model_inputs}")
 
-generated_ids = model.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=True)
+generated_ids = model.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=True, eos_token_id=tokenizer.eos_token_id)
 generated_ids = [
     output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
 ]
