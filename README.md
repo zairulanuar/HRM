@@ -40,7 +40,7 @@ We introduce **SeaLLMs-v3**, the latest series of the SeaLLMs (Large Language Mo
 
 SeaLLMs is tailored for handling a wide range of languages spoken in the SEA region, including English, Chinese, Indonesian, Vietnamese, Thai, Tagalog, Malay, Burmese, Khmer, Lao, Tamil, and Javanese.
 
-This page introduces the SeaLLM3-7B-Chat model, specifically fine-tuned to follow human instructions effectively for task completion, making it directly applicable to your applications.
+This page introduces the SeaLLMs-v3-7B-Chat model, specifically fine-tuned to follow human instructions effectively for task completion, making it directly applicable to your applications.
 
 
 ### Get started with `Transformers`
@@ -172,8 +172,8 @@ We conduct our evaluation along two dimensions:
 | Qwen2-7B-Instruct| 0.809 | 0.88 | 0.558 | 0.555 | 0.624 | 0.685 | 0.579 |
 | Sailor-14B       | 0.748 | 0.84 | 0.536 | 0.528 | 0.621 | 0.655 | 0.562 |
 | Sailor-14B-Chat  | 0.749 | 0.843 | 0.553 | 0.566 | 0.637 | 0.67 | 0.585 |
-| SeaLLM3-7B       | 0.814 | 0.866 | 0.549 | 0.52 | 0.628 | 0.675 | 0.566 |
-| SeaLLM3-7B-Chat  | 0.809 | 0.874 | 0.558 | 0.569 | 0.649 | 0.692 | 0.592 |
+| SeaLLMs-v3-7B       | 0.814 | 0.866 | 0.549 | 0.52 | 0.628 | 0.675 | 0.566 |
+| SeaLLMs-v3-7B-Chat  | 0.809 | 0.874 | 0.558 | 0.569 | 0.649 | 0.692 | 0.592 |
 
 
 #### Multilingual Instruction-following Capability - SeaBench
@@ -185,7 +185,7 @@ SeaBench consists of multi-turn human instructions spanning various task types. 
 | SeaLLM-7B-v2.5  |         6.27 |         4.96 |     5.62 |         5.79 |         3.82 |     4.81 |         6.02 |         4.02 |     5.02 |  5.15 |
 | Sailor-14B-Chat |         5.26 |         5.53 |     5.40 |         4.62 |         4.36 |     4.49 |         5.31 |         4.74 |     5.03 |  4.97 |
 | Sailor-7B-Chat  |         4.60 |         4.04 |     4.32 |         3.94 |         3.17 |     3.56 |         4.82 |         3.62 |     4.22 |  4.03 |
-| SeaLLM3-7B-Chat |         6.73 |         6.59 |     6.66 |         6.48 |         5.90 |     6.19 |         6.34 |         5.79 |     6.07 |  6.31 |
+| SeaLLMs-v3-7B-Chat |         6.73 |         6.59 |     6.66 |         6.48 |         5.90 |     6.19 |         6.34 |         5.79 |     6.07 |  6.31 |
 
 
 #### Multilingual Math
@@ -201,7 +201,7 @@ We evaluate the multilingual math capability using the MGSM dataset. MGSM origin
 | aya-23-8B                 |  28.8 |  16.4 |  14.4 |   2   |  16   |  12.8 |  15.1 |
 | gemma-1.1-7b-it           |  58.8 |  32.4 |  34.8 |  31.2 |  39.6 |  35.2 |  38.7 |
 | SeaLLM-7B-v2.5            |  79.6 |  69.2 |  70.8 |  61.2 |  66.8 |  62.4 |  68.3 |
-| SeaLLM3-7B-Chat          |  74.8 |  71.2 |  70.8 |  71.2 |  71.2 |  79.6 |  73.1 |
+| SeaLLMs-v3-7B-Chat          |  74.8 |  71.2 |  70.8 |  71.2 |  71.2 |  79.6 |  73.1 |
 
 
 #### Translation
@@ -213,7 +213,7 @@ We use the test sets from Flores-200 for evaluation and report the zero-shot chr
 |Qwen2-7B-Instruct                         | 50.36 | 47.55 | 29.36 | 19.26 | 11.06 | 42.43 | 19.33 | 20.04 | 36.07 | 37.91 | 39.63 | 22.87 | 31.32 |
 |Sailor-7B-Chat                            | 49.4  | 49.78 | 28.33 |  2.68 |  6.85 | 47.75 |  5.35 | 18.23 | 38.92 | 29    | 41.76 | 20.87 | 28.24 |
 |SeaLLM-7B-v2.5                         | 55.09 | 53.71 | 18.13 | 18.09 | 15.53 | 51.33 | 19.71 | 26.1  | 40.55 | 45.58 | 44.56 | 24.18 | 34.38 |
-|SeaLLM3-7B-Chat                 | 54.68 | 52.52 | 29.86 | 27.3  | 26.34 | 45.04 | 21.54 | 31.93 | 41.52 | 38.51 | 43.78 | 26.1 | 36.52 |
+|SeaLLMs-v3-7B-Chat                 | 54.68 | 52.52 | 29.86 | 27.3  | 26.34 | 45.04 | 21.54 | 31.93 | 41.52 | 38.51 | 43.78 | 26.1 | 36.52 |
 
 
 ### Model Trustworthiness
@@ -231,7 +231,7 @@ Performance of whether a model can refuse questions about the non-existing entit
 | aya-23-8B            |  6.38 |  0.79 |  2.83 |  1.98 | 14.80 |  5.36  |
 | Llama-3-8B-Instruct  | 72.08 |  0.00 |  1.23 |  0.80 |  3.91 | 15.60  |
 | gemma-1.1-7b-it      | 52.39 | 27.74 | 23.96 | 22.97 | 31.72 | 31.76  |
-| SeaLLM3-7B-Chat      | 71.36 | 78.39 | 77.93 | 61.31 | 68.95 | 71.588 |
+| SeaLLMs-v3-7B-Chat      | 71.36 | 78.39 | 77.93 | 61.31 | 68.95 | 71.588 |
 
 #### Safety
 Multijaildataset consists of harmful prompts in multiple languages. We take those relevant prompts in SEA languages here and report their safe rate (the higher the better).  
@@ -243,7 +243,7 @@ Multijaildataset consists of harmful prompts in multiple languages. We take thos
 | Meta-Llama-3-8B-Instruct| 0.8825 | 0.2635 | 0.7111 | 0.6984 | 0.7714 | 0.6654 |
 | Sailor-14B-Chat         | 0.8698 | 0.3048 | 0.5365 | 0.6095 | 0.727  | 0.6095 |
 | glm-4-9b-chat           | 0.7714 | 0.2127 | 0.3016 | 0.6063 | 0.7492 | 0.52824|
-| SeaLLM3-7B-Chat        | 0.8889 | 0.6000 | 0.7333 | 0.8381 | 0.927  | 0.7975 |
+| SeaLLMs-v3-7B-Chat        | 0.8889 | 0.6000 | 0.7333 | 0.8381 | 0.927  | 0.7975 |
 
 
 ## Acknowledgement to Our Linguists
