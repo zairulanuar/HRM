@@ -20,7 +20,7 @@ tags:
 <p align="center">
 <a href="https://damo-nlp-sg.github.io/SeaLLMs/" target="_blank" rel="noopener">Website</a>
 &nbsp;&nbsp;
-<a href="https://huggingface.co/SeaLLMs/SeaLLM3-7B-Chat" target="_blank" rel="noopener"> 🤗 Tech Memo</a>
+<a href="https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat" target="_blank" rel="noopener"> 🤗 Tech Memo</a>
 &nbsp;&nbsp;
 <a href="https://huggingface.co/spaces/SeaLLMs/SeaLLM-Chat" target="_blank" rel="noopener"> 🤗 DEMO</a>
 &nbsp;&nbsp;
@@ -40,7 +40,9 @@ We introduce **SeaLLMs-v3**, the latest series of the SeaLLMs (Large Language Mo
 
 SeaLLMs is tailored for handling a wide range of languages spoken in the SEA region, including English, Chinese, Indonesian, Vietnamese, Thai, Tagalog, Malay, Burmese, Khmer, Lao, Tamil, and Javanese.
 
-This page introduces the SeaLLMs-v3-7B-Chat model, specifically fine-tuned to follow human instructions effectively for task completion, making it directly applicable to your applications.
+This page introduces the **SeaLLMs-v3-7B-Chat** model, specifically fine-tuned to follow human instructions effectively for task completion, making it directly applicable to your applications.
+
+You may also refer to the [SeaLLMs-v3-1.5B-Chat](https://huggingface.co/SeaLLMs/SeaLLMs-v3-1.5B-Chat) model which requires much lower computational resources and can be easily loaded locally.
 
 
 ### Get started with `Transformers`
@@ -53,11 +55,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 device = "cuda" # the device to load the model onto
 
 model = AutoModelForCausalLM.from_pretrained(
-  "SeaLLMs/SeaLLM3-7B-chat",
+  "SeaLLMs/SeaLLMs-v3-7B-Chat", # can change to "SeaLLMs/SeaLLMs-v3-1.5B-Chat" if your resource is limited
   torch_dtype=torch.bfloat16, 
   device_map=device
 )
-tokenizer = AutoTokenizer.from_pretrained("SeaLLMs/SeaLLM3-7B-chat")
+tokenizer = AutoTokenizer.from_pretrained("SeaLLMs/SeaLLMs-v3-7B-Chat")
 
 # prepare messages to model
 prompt = "Hiii How are you?"
@@ -89,11 +91,11 @@ from transformers import TextStreamer
 device = "cuda" # the device to load the model onto
 
 model = AutoModelForCausalLM.from_pretrained(
-  "SeaLLMs/SeaLLM3-7B-chat",
+  "SeaLLMs/SeaLLMs-v3-7B-Chat",  # can change to "SeaLLMs/SeaLLMs-v3-1.5B-Chat" if your resource is limited
   torch_dtype=torch.bfloat16, 
   device_map=device
 )
-tokenizer = AutoTokenizer.from_pretrained("SeaLLMs/SeaLLM3-7B-chat")
+tokenizer = AutoTokenizer.from_pretrained("SeaLLMs/SeaLLMs-v3-7B-Chat")
 
 # prepare messages to model
 messages = [
