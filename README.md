@@ -256,12 +256,14 @@ We would like to express our special thanks to our professional and native lingu
 
 If you find our project useful, we hope you would kindly star our repo and cite our work as follows: 
 ```
-@article{damonlp2024seallm3,
-  author = {Wenxuan Zhang*, Hou Pong Chan*, Yiran Zhao*, Mahani Aljunied*,
-            Jianyu Wang, Chaoqun Liu, Yue Deng, Zhiqiang Hu, Weiwen Xu,
-            Yew Ken Chia, Xin Li, Lidong Bing},
-  title = {SeaLLMs - Large Language Models for Southeast Asia},
-  year = {2024},
+@misc{zhang2024seallms3openfoundation,
+      title={SeaLLMs 3: Open Foundation and Chat Multilingual Large Language Models for Southeast Asian Languages}, 
+      author={Wenxuan Zhang and Hou Pong Chan and Yiran Zhao and Mahani Aljunied and Jianyu Wang and Chaoqun Liu and Yue Deng and Zhiqiang Hu and Weiwen Xu and Yew Ken Chia and Xin Li and Lidong Bing},
+      year={2024},
+      eprint={2407.19672},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.19672}, 
 }
 ```
 Corresponding Author: l.bing@alibaba-inc.com
