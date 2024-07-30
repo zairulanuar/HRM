@@ -16,17 +16,16 @@ tags:
 
 # *SeaLLMs-v3* - Large Language Models for Southeast Asia
 
-
 <p align="center">
 <a href="https://damo-nlp-sg.github.io/SeaLLMs/" target="_blank" rel="noopener">Website</a>
 &nbsp;&nbsp;
-<a href="https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat" target="_blank" rel="noopener"> 🤗 Tech Memo</a>
+<a href="https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat" target="_blank" rel="noopener">Model</a>
 &nbsp;&nbsp;
 <a href="https://huggingface.co/spaces/SeaLLMs/SeaLLM-Chat" target="_blank" rel="noopener"> 🤗 DEMO</a>
 &nbsp;&nbsp;
 <a href="https://github.com/DAMO-NLP-SG/SeaLLMs" target="_blank" rel="noopener">Github</a>
 &nbsp;&nbsp;
-<a href="https://arxiv.org/pdf/2312.00738.pdf" target="_blank" rel="noopener">Technical Report</a>
+<a href="https://arxiv.org/pdf/2407.19672" target="_blank" rel="noopener">[NEW] Technical Report</a>
 </p>
 
 We introduce **SeaLLMs-v3**, the latest series of the SeaLLMs (Large Language Models for Southeast Asian languages) family. It achieves state-of-the-art performance among models with similar sizes, excelling across a diverse array of tasks such as world knowledge, mathematical reasoning, translation, and instruction following. In the meantime, it was specifically enhanced to be more trustworthy, exhibiting reduced hallucination and providing safe responses, particularly in queries closed related to Southeast Asian culture.
@@ -174,8 +173,8 @@ We conduct our evaluation along two dimensions:
 | Qwen2-7B-Instruct| 0.809 | 0.88 | 0.558 | 0.555 | 0.624 | 0.685 | 0.579 |
 | Sailor-14B       | 0.748 | 0.84 | 0.536 | 0.528 | 0.621 | 0.655 | 0.562 |
 | Sailor-14B-Chat  | 0.749 | 0.843 | 0.553 | 0.566 | 0.637 | 0.67 | 0.585 |
-| SeaLLMs-v3-7B       | 0.814 | 0.866 | 0.549 | 0.52 | 0.628 | 0.675 | 0.566 |
-| SeaLLMs-v3-7B-Chat  | 0.809 | 0.874 | 0.558 | 0.569 | 0.649 | 0.692 | 0.592 |
+| SeaLLMs-v3-7B       | 0.809 | 0.863 | 0.545 | 0.530 | 0.628 | 0.675 | 0.568 |
+| **SeaLLMs-v3-7B-Chat**  | 0.809 | 0.874 | 0.558 | 0.569 | 0.649 | 0.692 | **0.592** |
 
 
 #### Multilingual Instruction-following Capability - SeaBench
@@ -187,7 +186,7 @@ SeaBench consists of multi-turn human instructions spanning various task types. 
 | SeaLLM-7B-v2.5  |         6.27 |         4.96 |     5.62 |         5.79 |         3.82 |     4.81 |         6.02 |         4.02 |     5.02 |  5.15 |
 | Sailor-14B-Chat |         5.26 |         5.53 |     5.40 |         4.62 |         4.36 |     4.49 |         5.31 |         4.74 |     5.03 |  4.97 |
 | Sailor-7B-Chat  |         4.60 |         4.04 |     4.32 |         3.94 |         3.17 |     3.56 |         4.82 |         3.62 |     4.22 |  4.03 |
-| SeaLLMs-v3-7B-Chat |         6.73 |         6.59 |     6.66 |         6.48 |         5.90 |     6.19 |         6.34 |         5.79 |     6.07 |  6.31 |
+| **SeaLLMs-v3-7B-Chat** |         6.73 |         6.59 |     6.66 |         6.48 |         5.90 |     6.19 |         6.34 |         5.79 |     6.07 |  **6.31** |
 
 
 #### Multilingual Math
@@ -203,7 +202,7 @@ We evaluate the multilingual math capability using the MGSM dataset. MGSM origin
 | aya-23-8B                 |  28.8 |  16.4 |  14.4 |   2   |  16   |  12.8 |  15.1 |
 | gemma-1.1-7b-it           |  58.8 |  32.4 |  34.8 |  31.2 |  39.6 |  35.2 |  38.7 |
 | SeaLLM-7B-v2.5            |  79.6 |  69.2 |  70.8 |  61.2 |  66.8 |  62.4 |  68.3 |
-| SeaLLMs-v3-7B-Chat          |  74.8 |  71.2 |  70.8 |  71.2 |  71.2 |  79.6 |  73.1 |
+| **SeaLLMs-v3-7B-Chat**    |  74.8 |  71.2 |  70.8 |  71.2 |  71.2 |  79.6 |  **73.1** |
 
 
 #### Translation
@@ -215,7 +214,7 @@ We use the test sets from Flores-200 for evaluation and report the zero-shot chr
 |Qwen2-7B-Instruct                         | 50.36 | 47.55 | 29.36 | 19.26 | 11.06 | 42.43 | 19.33 | 20.04 | 36.07 | 37.91 | 39.63 | 22.87 | 31.32 |
 |Sailor-7B-Chat                            | 49.4  | 49.78 | 28.33 |  2.68 |  6.85 | 47.75 |  5.35 | 18.23 | 38.92 | 29    | 41.76 | 20.87 | 28.24 |
 |SeaLLM-7B-v2.5                         | 55.09 | 53.71 | 18.13 | 18.09 | 15.53 | 51.33 | 19.71 | 26.1  | 40.55 | 45.58 | 44.56 | 24.18 | 34.38 |
-|SeaLLMs-v3-7B-Chat                 | 54.68 | 52.52 | 29.86 | 27.3  | 26.34 | 45.04 | 21.54 | 31.93 | 41.52 | 38.51 | 43.78 | 26.1 | 36.52 |
+|**SeaLLMs-v3-7B-Chat**                 | 54.68 | 52.52 | 29.86 | 27.3  | 26.34 | 45.04 | 21.54 | 31.93 | 41.52 | 38.51 | 43.78 | 26.1 | **36.52** |
 
 
 ### Model Trustworthiness
@@ -225,27 +224,27 @@ Performance of whether a model can refuse questions about the non-existing entit
 
 | Refusal-F1 Scores    |    en |    zh |    vi |    th |    id |    avg |
 |:---------------------|------:|------:|------:|------:|------:|-------:|
-| Qwen1.5-7B-Instruct  | 53.85 | 51.70 | 52.85 | 35.5  | 58.4  | 50.46  |
-| Qwen2-7B-Instruct    | 58.79 | 33.08 | 56.21 | 44.6  | 55.98 | 49.732 |
+| Qwen1.5-7B-Instruct  | 53.85 | 51.70 | 52.85 | 35.50  | 58.40  | 50.46  |
+| Qwen2-7B-Instruct    | 58.79 | 33.08 | 56.21 | 44.60  | 55.98 | 49.73 |
 | SeaLLM-7B-v2.5       | 12.90 |  0.77 |  2.45 | 19.42 |  0.78 |  7.26  |
 | Sailor-7B-Chat       | 33.49 | 18.82 |  5.19 |  9.68 | 16.42 | 16.72  |
 | glm-4-9b-chat        | 44.48 | 37.89 | 18.66 |  4.27 |  1.97 | 21.45  |
-| aya-23-8B            |  6.38 |  0.79 |  2.83 |  1.98 | 14.80 |  5.36  |
 | Llama-3-8B-Instruct  | 72.08 |  0.00 |  1.23 |  0.80 |  3.91 | 15.60  |
 | gemma-1.1-7b-it      | 52.39 | 27.74 | 23.96 | 22.97 | 31.72 | 31.76  |
-| SeaLLMs-v3-7B-Chat      | 71.36 | 78.39 | 77.93 | 61.31 | 68.95 | 71.588 |
+| **SeaLLMs-v3-7B-Chat**      | 71.36 | 78.39 | 77.93 | 61.31 | 68.95 | **71.59** |
+
 
 #### Safety
 Multijaildataset consists of harmful prompts in multiple languages. We take those relevant prompts in SEA languages here and report their safe rate (the higher the better).  
 
 | Model                   |     en |     jv |     th |     vi |     zh |    avg |
 |:------------------------|-------:|-------:|-------:|-------:|------:|-------:|
-| Qwen2-7B-Instruct       | 0.8857 | 0.4381 | 0.6381 | 0.7302 | 0.873  | 0.713  |
-| Sailor-7B-Chat          | 0.7873 | 0.5492 | 0.6222 | 0.6762 | 0.7619 | 0.6794 |
-| Meta-Llama-3-8B-Instruct| 0.8825 | 0.2635 | 0.7111 | 0.6984 | 0.7714 | 0.6654 |
-| Sailor-14B-Chat         | 0.8698 | 0.3048 | 0.5365 | 0.6095 | 0.727  | 0.6095 |
-| glm-4-9b-chat           | 0.7714 | 0.2127 | 0.3016 | 0.6063 | 0.7492 | 0.52824|
-| SeaLLMs-v3-7B-Chat        | 0.8889 | 0.6000 | 0.7333 | 0.8381 | 0.927  | 0.7975 |
+| Qwen2-7B-Instruct       | 88.57 | 43.81 | 63.81 | 73.02 | 87.30  | 71.30  |
+| Sailor-7B-Chat          | 78.73 | 54.92 | 62.22 | 67.62 | 76.19 | 67.94 |
+| Meta-Llama-3-8B-Instruct| 88.25 | 26.35 | 71.11 | 69.84 | 77.14 | 66.54 |
+| Sailor-14B-Chat         | 86.98 | 30.48 | 53.65 | 60.95 | 72.70  | 60.95 |
+| glm-4-9b-chat           | 77.14 | 21.27 | 30.16 | 60.63 | 74.92 | 52.82 |
+| **SeaLLMs-v3-7B-Chat**  | 88.89 | 60.00 | 73.33 | 83.81 | 92.70  | **79.75** |
 
 
 ## Acknowledgement to Our Linguists
@@ -258,10 +257,11 @@ If you find our project useful, we hope you would kindly star our repo and cite 
 ```
 @article{damonlp2024seallm3,
   author = {Wenxuan Zhang*, Hou Pong Chan*, Yiran Zhao*, Mahani Aljunied*,
-            Jianyu Wang, Chaoqun Liu, Yue Deng, Zhiqiang Hu, Weiwen Xu,
+            Jianyu Wang*, Chaoqun Liu, Yue Deng, Zhiqiang Hu, Weiwen Xu,
             Yew Ken Chia, Xin Li, Lidong Bing},
-  title = {SeaLLMs - Large Language Models for Southeast Asia},
+  title = {SeaLLMs 3: Open Foundation and Chat Multilingual Large Language Models for Southeast Asian Languages},
   year = {2024},
+  url = {https://arxiv.org/abs/2407.19672}
 }
 ```
 Corresponding Author: l.bing@alibaba-inc.com
