@@ -1,7 +1,4 @@
 ---
-license: other
-license_name: seallms
-license_link: https://huggingface.co/SeaLLMs/SeaLLM-13B-Chat/blob/main/LICENSE
 language:
 - en
 - zh
@@ -9,9 +6,107 @@ language:
 - vi
 - th
 - ms
+license: other
 tags:
 - sea
 - multilingual
+license_name: seallms
+license_link: https://huggingface.co/SeaLLMs/SeaLLM-13B-Chat/blob/main/LICENSE
+model-index:
+- name: SeaLLMs-v3-7B-Chat
+  results:
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: IFEval (0-Shot)
+      type: HuggingFaceH4/ifeval
+      args:
+        num_few_shot: 0
+    metrics:
+    - type: inst_level_strict_acc and prompt_level_strict_acc
+      value: 43.77
+      name: strict accuracy
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: BBH (3-Shot)
+      type: BBH
+      args:
+        num_few_shot: 3
+    metrics:
+    - type: acc_norm
+      value: 33.8
+      name: normalized accuracy
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: MATH Lvl 5 (4-Shot)
+      type: hendrycks/competition_math
+      args:
+        num_few_shot: 4
+    metrics:
+    - type: exact_match
+      value: 15.11
+      name: exact match
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: GPQA (0-shot)
+      type: Idavidrein/gpqa
+      args:
+        num_few_shot: 0
+    metrics:
+    - type: acc_norm
+      value: 6.49
+      name: acc_norm
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: MuSR (0-shot)
+      type: TAUR-Lab/MuSR
+      args:
+        num_few_shot: 0
+    metrics:
+    - type: acc_norm
+      value: 10.47
+      name: acc_norm
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
+  - task:
+      type: text-generation
+      name: Text Generation
+    dataset:
+      name: MMLU-PRO (5-shot)
+      type: TIGER-Lab/MMLU-Pro
+      config: main
+      split: test
+      args:
+        num_few_shot: 5
+    metrics:
+    - type: acc
+      value: 32.16
+      name: accuracy
+    source:
+      url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard?query=SeaLLMs/SeaLLMs-v3-7B-Chat
+      name: Open LLM Leaderboard
 ---
 
 # *SeaLLMs-v3* - Large Language Models for Southeast Asia
@@ -265,3 +360,16 @@ If you find our project useful, we hope you would kindly star our repo and cite 
 }
 ```
 Corresponding Author: l.bing@alibaba-inc.com
+# [Open LLM Leaderboard Evaluation Results](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)
+Detailed results can be found [here](https://huggingface.co/datasets/open-llm-leaderboard/details_SeaLLMs__SeaLLMs-v3-7B-Chat)
+
+|      Metric       |Value|
+|-------------------|----:|
+|Avg.               |23.63|
+|IFEval (0-Shot)    |43.77|
+|BBH (3-Shot)       |33.80|
+|MATH Lvl 5 (4-Shot)|15.11|
+|GPQA (0-shot)      | 6.49|
+|MuSR (0-shot)      |10.47|
+|MMLU-PRO (5-shot)  |32.16|
+
