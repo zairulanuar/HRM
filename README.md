@@ -9,6 +9,12 @@ language:
 - vi
 - th
 - ms
+- tl
+- ta
+- jv
+- lo
+- km
+- my
 tags:
 - sea
 - multilingual
