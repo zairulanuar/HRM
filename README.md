@@ -207,7 +207,7 @@ We evaluate the multilingual math capability using the MGSM dataset. MGSM origin
 | Qwen2-7B-instruct         |  82   |  66.4 |  62.4 |  58.4 |  64.4 |  76.8 |  68.4 |
 | aya-23-8B                 |  28.8 |  16.4 |  14.4 |   2   |  16   |  12.8 |  15.1 |
 | gemma-1.1-7b-it           |  58.8 |  32.4 |  34.8 |  31.2 |  39.6 |  35.2 |  38.7 |
-| SeaLLM-7B-v2.5            |  79.6 |  69.2 |  70.8 |  61.2 |  66.8 |  62.4 |  68.3 |
+| SeaLLMs-7B-v2.5            |  79.6 |  69.2 |  70.8 |  61.2 |  66.8 |  62.4 |  68.3 |
 | **SeaLLMs-v3-7B-Chat**    |  74.8 |  71.2 |  70.8 |  71.2 |  71.2 |  79.6 |  **73.1** |
 
 
